@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+*
+{
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background: linear-gradient(to top, #ffcc01, #ffdf01);
+}
+
+.container
+{
+	/* overflow: hidden; */
+	color: black;
+	max-width: 500px;
+	margin: auto;
+	padding: 37px;
+	text-align: center;
+	height: 100vh;
+
+}
+
+.form_container
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 18px;
+}
+
+.form
+{
+	background:linear-gradient(to left, rgb(29, 29, 29), rgb(0, 0, 0));
+	padding: 48px;
+	border-radius: 6px;
+	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, .65);
+}
+
+.form_title
+{
+	color: #ffdf01;
+	letter-spacing: 1px;
+}
+
+input
+{
+	width: 400px;
+	height: 60px;
+	font-size: 20px;
+	background: transparent;
+	border: none;
+	transition: 275ms ease-in, 275ms ease-out;
+}
+
+::placeholder
+{
+	color: yellow;
+}
+
+
+input[type=text]
+{
+	
+	background: transparent;
+	padding: 3px;
+	color: #ffdf01;
+	border: none;
+	border-bottom: 2px solid #ffdf01;
+}
+
+input[type=text]:focus
+{
+	border: none;	
+}
+
+
+input[type=email]
+{
+	padding: 3px;
+	color: #ffdf01;
+	border: none;
+	border-bottom: 2px solid #ffdf01;
+}
+
+input[type=email]:focus
+{
+	border: none;	
+}
+
+
+
+.submit
+{
+	width: 400px;
+	height: 60px;
+	font-size: 21px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: none;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, .65);
+	padding: 12px;
+	cursor: pointer;
+	color: black;
+	background-color: #ffdf01;
+	transition: 275ms ease-in, 275ms ease-out;
+}
+
+.submit:hover
+{
+	box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, .65);
+}
+
+
+.footer_text a
+{
+	color: #ffdf01;
+
+}
+
+
+.footer
+{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background:linear-gradient(to right, rgb(19, 19, 19), rgb(0, 0, 0));
+	color: #ffdf01;
+	text-align: center;
+	line-height: 48px;
+	box-shadow: 0px 9px 45px 24px rgba(0, 0, 0, .65);
+
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+	.container
+	{
+		padding: 16px;
+		height: 130vh;
+	}
+
+	.form
+	{
+		width: 200px;
+	}
+
+	input
+	{
+		width: 200px;
+		height: 60px;
+		font-size: 17px;
+	}
+
+	.submit
+	{
+		width: 200px; 
+		padding: 9px;
+		font-size: 16px;
+	}
+}
